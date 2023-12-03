@@ -29,4 +29,4 @@ class post(models.Model):
         verbose_name='entrada'
         verbose_name_plural='entradas'
     def __str__(self):
-        return self.name
+        return self.tittle
