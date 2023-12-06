@@ -40,6 +40,7 @@ class Migration(migrations.Migration):
                 ('updated', models.DateTimeField(auto_now=True, verbose_name='Fecha de modificacion')),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL, verbose_name='autor')),
                 ('categories', models.ManyToManyField(to='blog.category', verbose_name='categorías')),
+                ('content', models.TextField(verbose_name='Contenido')),
             ],
             options={
                 'verbose_name': 'entrada',
